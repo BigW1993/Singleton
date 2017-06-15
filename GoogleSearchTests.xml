@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GoogleSearchTests" parallel="classes" thread-count="2">
+	<test name="Chrome">
+		<classes>
+			<class name="com.web.test.ChromeGoogleSearchTests" />
+		</classes>
+	</test>
+	<test name="Firefox">
+		<classes>
+			<class name="com.web.test.FirefoxGoogleSearchTests" />
+		</classes>
+	</test>
+</suite>
