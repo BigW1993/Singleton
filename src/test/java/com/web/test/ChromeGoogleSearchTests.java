@@ -9,7 +9,6 @@ import com.framework.browser.BrowserWebDriver;
 import com.google.pages.GoogleHomePage;
 import com.google.pages.GoogleMainPage;
 import com.google.pages.GoogleResultPage;
-import com.test.data.GoogleSearchTestsData;
 
 public class ChromeGoogleSearchTests {
 
@@ -27,18 +26,6 @@ public class ChromeGoogleSearchTests {
 		googleHomePage = googleMainPage.openGoogleHomePage();
 		googleResultPage = googleHomePage.searchSomeText("google");
 		Assert.assertEquals(googleResultPage.getTextFromFirstSearchResult(), "google", "failed!");
-	}
-	
-	@Test(priority = 2)
-	public void test123() {
-		googleResultPage = googleResultPage.searchSomeText("qqq");
-		Assert.assertEquals(googleResultPage.getTextFromFirstSearchResult(), "qqq", "failed!");
-	}
-
-	@Test(priority = 3, dataProviderClass = GoogleSearchTestsData.class, dataProvider = "dataForTests")
-	public void test(String text, String expected) {
-		googleResultPage = googleResultPage.searchSomeText(text);
-		Assert.assertEquals(googleResultPage.getTextFromFirstSearchResult(), expected, "failed!");
 	}
 
 	@AfterClass

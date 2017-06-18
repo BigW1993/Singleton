@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [GoogleSearchTests]" parallel="classes">
-  <test name="Chrome(failed)" parallel="classes">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [GoogleSearchTests]">
+  <test name="ChromeGoogleSearchTests(failed)">
     <classes>
       <class name="com.web.test.ChromeGoogleSearchTests">
         <methods>
@@ -12,8 +12,8 @@
         </methods>
       </class> <!-- com.web.test.ChromeGoogleSearchTests -->
     </classes>
-  </test> <!-- Chrome(failed) -->
-  <test name="Firefox(failed)" parallel="classes">
+  </test> <!-- ChromeGoogleSearchTests(failed) -->
+  <test name="FirefoxGoogleSearchTests(failed)">
     <classes>
       <class name="com.web.test.FirefoxGoogleSearchTests">
         <methods>
@@ -24,5 +24,5 @@
         </methods>
       </class> <!-- com.web.test.FirefoxGoogleSearchTests -->
     </classes>
-  </test> <!-- Firefox(failed) -->
+  </test> <!-- FirefoxGoogleSearchTests(failed) -->
 </suite> <!-- Failed suite [GoogleSearchTests] -->

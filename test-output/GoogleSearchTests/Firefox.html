@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 15 19:13:31 EEST 2017</td>
+<td>Started on:</td><td>Fri Jun 16 09:21:57 EEST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9125 ms)</td>
+<tr><td>Total time:</td><td>19 seconds (19626 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,22 +76,20 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.web.test.FirefoxGoogleSearchTests.test()'><b>test</b><br>Test class: com.web.test.FirefoxGoogleSearchTests<br>Parameters: qaz, qaz</td>
-<td><div><pre>java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.clear(Unknown Source)
-	at com.google.pages.GoogleResultPage.searchSomeText(GoogleResultPage.java:16)
-	at com.web.test.FirefoxGoogleSearchTests.test(FirefoxGoogleSearchTests.java:40)
+<td><div><pre>java.lang.AssertionError: failed! expected [qaz] but found [qaz - youtube]
+	at com.web.test.FirefoxGoogleSearchTests.test(FirefoxGoogleSearchTests.java:41)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace774075770", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace774075770'><pre>java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.clear(Unknown Source)
-	at com.google.pages.GoogleResultPage.searchSomeText(GoogleResultPage.java:16)
-	at com.web.test.FirefoxGoogleSearchTests.test(FirefoxGoogleSearchTests.java:40)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1984778351", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1984778351'><pre>java.lang.AssertionError: failed! expected [qaz] but found [qaz - youtube]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at com.web.test.FirefoxGoogleSearchTests.test(FirefoxGoogleSearchTests.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -102,30 +100,35 @@ function toggleAllBoxes() {
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>0</td>
+<td>1</td>
 <td>com.web.test.FirefoxGoogleSearchTests@6e06451e</td></tr>
 <tr>
 <td title='com.web.test.FirefoxGoogleSearchTests.test()'><b>test</b><br>Test class: com.web.test.FirefoxGoogleSearchTests<br>Parameters: wsx, wsx</td>
-<td><div><pre>java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.clear(Unknown Source)
-	at com.google.pages.GoogleResultPage.searchSomeText(GoogleResultPage.java:16)
-	at com.web.test.FirefoxGoogleSearchTests.test(FirefoxGoogleSearchTests.java:40)
+<td><div><pre>java.lang.AssertionError: failed! expected [wsx] but found [wsx d.i.f.h entrance music the envy - youtube]
+	at com.web.test.FirefoxGoogleSearchTests.test(FirefoxGoogleSearchTests.java:41)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1487306647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1487306647'><pre>java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.clear(Unknown Source)
-	at com.google.pages.GoogleResultPage.searchSomeText(GoogleResultPage.java:16)
-	at com.web.test.FirefoxGoogleSearchTests.test(FirefoxGoogleSearchTests.java:40)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace364029756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace364029756'><pre>java.lang.AssertionError: failed! expected [wsx] but found [wsx d.i.f.h entrance music the envy - youtube]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at com.web.test.FirefoxGoogleSearchTests.test(FirefoxGoogleSearchTests.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -136,30 +139,35 @@ function toggleAllBoxes() {
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>0</td>
+<td>1</td>
 <td>com.web.test.FirefoxGoogleSearchTests@6e06451e</td></tr>
 <tr>
 <td title='com.web.test.FirefoxGoogleSearchTests.test()'><b>test</b><br>Test class: com.web.test.FirefoxGoogleSearchTests<br>Parameters: edc, edc</td>
-<td><div><pre>java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.clear(Unknown Source)
-	at com.google.pages.GoogleResultPage.searchSomeText(GoogleResultPage.java:16)
-	at com.web.test.FirefoxGoogleSearchTests.test(FirefoxGoogleSearchTests.java:40)
+<td><div><pre>java.lang.AssertionError: failed! expected [edc] but found [edc Ч википеди€]
+	at com.web.test.FirefoxGoogleSearchTests.test(FirefoxGoogleSearchTests.java:41)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace113196026", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace113196026'><pre>java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.clear(Unknown Source)
-	at com.google.pages.GoogleResultPage.searchSomeText(GoogleResultPage.java:16)
-	at com.web.test.FirefoxGoogleSearchTests.test(FirefoxGoogleSearchTests.java:40)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2079308069", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2079308069'><pre>java.lang.AssertionError: failed! expected [edc] but found [edc Ч википеди€]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at com.web.test.FirefoxGoogleSearchTests.test(FirefoxGoogleSearchTests.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -170,37 +178,34 @@ function toggleAllBoxes() {
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>0</td>
+<td>1</td>
 <td>com.web.test.FirefoxGoogleSearchTests@6e06451e</td></tr>
 <tr>
 <td title='com.web.test.FirefoxGoogleSearchTests.test123()'><b>test123</b><br>Test class: com.web.test.FirefoxGoogleSearchTests</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770)
-	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:96)
-	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:71)
-	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:45)
-	at com.main.objects.AbstractMainPage.waitForElement(AbstractMainPage.java:17)
-	at com.main.objects.AbstractMainPage.waitForElementToBeVisible(AbstractMainPage.java:21)
-	at com.main.objects.AbstractMainPage.waitAndGetText(AbstractMainPage.java:29)
-	at com.google.pages.GoogleResultPage.getTextFromFirstSearchResult(GoogleResultPage.java:23)
+<td><div><pre>java.lang.AssertionError: failed! expected [qqq] but found [qqq 139.98 -3.59 -2.50% : powershares qqq trust, series 1 - yahoo ...]
 	at com.web.test.FirefoxGoogleSearchTests.test123(FirefoxGoogleSearchTests.java:35)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1026613446", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1026613446'><pre>java.lang.NullPointerException
-	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770)
-	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:96)
-	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:71)
-	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:45)
-	at com.main.objects.AbstractMainPage.waitForElement(AbstractMainPage.java:17)
-	at com.main.objects.AbstractMainPage.waitForElementToBeVisible(AbstractMainPage.java:21)
-	at com.main.objects.AbstractMainPage.waitAndGetText(AbstractMainPage.java:29)
-	at com.google.pages.GoogleResultPage.getTextFromFirstSearchResult(GoogleResultPage.java:23)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1874029580", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1874029580'><pre>java.lang.AssertionError: failed! expected [qqq] but found [qqq 139.98 -3.59 -2.50% : powershares qqq trust, series 1 - yahoo ...]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
 	at com.web.test.FirefoxGoogleSearchTests.test123(FirefoxGoogleSearchTests.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -212,11 +217,18 @@ function toggleAllBoxes() {
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>0</td>
+<td>1</td>
 <td>com.web.test.FirefoxGoogleSearchTests@6e06451e</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>

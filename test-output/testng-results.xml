@@ -2,31 +2,31 @@
 <testng-results skipped="0" failed="8" ignored="0" total="10" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="GoogleSearchTests" duration-ms="18011" started-at="2017-06-15T16:13:23Z" finished-at="2017-06-15T16:13:41Z">
+  <suite name="GoogleSearchTests" duration-ms="38843" started-at="2017-06-16T18:15:17Z" finished-at="2017-06-16T18:15:55Z">
     <groups>
     </groups>
-    <test name="Chrome" duration-ms="8825" started-at="2017-06-15T16:13:23Z" finished-at="2017-06-15T16:13:31Z">
+    <test name="ChromeGoogleSearchTests" duration-ms="19696" started-at="2017-06-16T18:15:17Z" finished-at="2017-06-16T18:15:36Z">
       <class name="com.web.test.ChromeGoogleSearchTests">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.web.test.ChromeGoogleSearchTests@13deb50e]" name="beforeClass" is-config="true" duration-ms="4953" started-at="2017-06-15T19:13:23Z" finished-at="2017-06-15T19:13:28Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.web.test.ChromeGoogleSearchTests@13deb50e]" name="beforeClass" is-config="true" duration-ms="6818" started-at="2017-06-16T21:15:17Z" finished-at="2017-06-16T21:15:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="testTextFromFirstSearchResult()[pri:1, instance:com.web.test.ChromeGoogleSearchTests@13deb50e]" name="testTextFromFirstSearchResult" duration-ms="3731" started-at="2017-06-15T19:13:28Z" finished-at="2017-06-15T19:13:31Z">
+        <test-method status="PASS" signature="testTextFromFirstSearchResult()[pri:1, instance:com.web.test.ChromeGoogleSearchTests@13deb50e]" name="testTextFromFirstSearchResult" duration-ms="5689" started-at="2017-06-16T21:15:23Z" finished-at="2017-06-16T21:15:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTextFromFirstSearchResult -->
-        <test-method status="FAIL" signature="test123()[pri:2, instance:com.web.test.ChromeGoogleSearchTests@13deb50e]" name="test123" duration-ms="118" started-at="2017-06-15T19:13:31Z" finished-at="2017-06-15T19:13:31Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="FAIL" signature="test123()[pri:2, instance:com.web.test.ChromeGoogleSearchTests@13deb50e]" name="test123" duration-ms="1732" started-at="2017-06-16T21:15:29Z" finished-at="2017-06-16T21:15:31Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[failed! expected [qqq] but found [qqq 139.13 -0.62 -0.44% : powershares qqq trust, ser 1 - yahoo ...]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770)
-	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:96)
-	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:71)
-	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:45)
-	at com.main.objects.AbstractMainPage.waitForElement(AbstractMainPage.java:17)
-	at com.main.objects.AbstractMainPage.waitForElementToBeVisible(AbstractMainPage.java:21)
-	at com.main.objects.AbstractMainPage.waitAndGetText(AbstractMainPage.java:29)
-	at com.google.pages.GoogleResultPage.getTextFromFirstSearchResult(GoogleResultPage.java:23)
+              <![CDATA[java.lang.AssertionError: failed! expected [qqq] but found [qqq 139.13 -0.62 -0.44% : powershares qqq trust, ser 1 - yahoo ...]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
 	at com.web.test.ChromeGoogleSearchTests.test123(ChromeGoogleSearchTests.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -38,16 +38,28 @@
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test123 -->
-        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String)[pri:3, instance:com.web.test.ChromeGoogleSearchTests@13deb50e]" name="test" duration-ms="1" started-at="2017-06-15T19:13:31Z" data-provider="dataForTests" finished-at="2017-06-15T19:13:31Z">
+        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String)[pri:3, instance:com.web.test.ChromeGoogleSearchTests@13deb50e]" name="test" duration-ms="1285" started-at="2017-06-16T21:15:31Z" data-provider="dataForTests" finished-at="2017-06-16T21:15:32Z">
           <params>
             <param index="0">
               <value>
@@ -60,14 +72,18 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[failed! expected [qaz] but found [qaz - youtube]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.clear(Unknown Source)
-	at com.google.pages.GoogleResultPage.searchSomeText(GoogleResultPage.java:16)
-	at com.web.test.ChromeGoogleSearchTests.test(ChromeGoogleSearchTests.java:40)
+              <![CDATA[java.lang.AssertionError: failed! expected [qaz] but found [qaz - youtube]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at com.web.test.ChromeGoogleSearchTests.test(ChromeGoogleSearchTests.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -78,16 +94,28 @@
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String)[pri:3, instance:com.web.test.ChromeGoogleSearchTests@13deb50e]" name="test" duration-ms="1" started-at="2017-06-15T19:13:31Z" data-provider="dataForTests" finished-at="2017-06-15T19:13:31Z">
+        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String)[pri:3, instance:com.web.test.ChromeGoogleSearchTests@13deb50e]" name="test" duration-ms="1234" started-at="2017-06-16T21:15:32Z" data-provider="dataForTests" finished-at="2017-06-16T21:15:33Z">
           <params>
             <param index="0">
               <value>
@@ -100,14 +128,18 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[failed! expected [wsx] but found [wsx d.i.f.h entrance music the envy - youtube]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.clear(Unknown Source)
-	at com.google.pages.GoogleResultPage.searchSomeText(GoogleResultPage.java:16)
-	at com.web.test.ChromeGoogleSearchTests.test(ChromeGoogleSearchTests.java:40)
+              <![CDATA[java.lang.AssertionError: failed! expected [wsx] but found [wsx d.i.f.h entrance music the envy - youtube]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at com.web.test.ChromeGoogleSearchTests.test(ChromeGoogleSearchTests.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -118,16 +150,28 @@
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String)[pri:3, instance:com.web.test.ChromeGoogleSearchTests@13deb50e]" name="test" duration-ms="1" started-at="2017-06-15T19:13:31Z" data-provider="dataForTests" finished-at="2017-06-15T19:13:31Z">
+        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String)[pri:3, instance:com.web.test.ChromeGoogleSearchTests@13deb50e]" name="test" duration-ms="1739" started-at="2017-06-16T21:15:33Z" data-provider="dataForTests" finished-at="2017-06-16T21:15:35Z">
           <params>
             <param index="0">
               <value>
@@ -140,14 +184,18 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[failed! expected [edc] but found [everyday carry - what are your edc essentials?]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.clear(Unknown Source)
-	at com.google.pages.GoogleResultPage.searchSomeText(GoogleResultPage.java:16)
-	at com.web.test.ChromeGoogleSearchTests.test(ChromeGoogleSearchTests.java:40)
+              <![CDATA[java.lang.AssertionError: failed! expected [edc] but found [everyday carry - what are your edc essentials?]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at com.web.test.ChromeGoogleSearchTests.test(ChromeGoogleSearchTests.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -158,43 +206,55 @@
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.web.test.ChromeGoogleSearchTests@13deb50e]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-06-15T19:13:31Z" finished-at="2017-06-15T19:13:31Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.web.test.ChromeGoogleSearchTests@13deb50e]" name="afterClass" is-config="true" duration-ms="1172" started-at="2017-06-16T21:15:35Z" finished-at="2017-06-16T21:15:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.web.test.ChromeGoogleSearchTests -->
-    </test> <!-- Chrome -->
-    <test name="Firefox" duration-ms="9125" started-at="2017-06-15T16:13:31Z" finished-at="2017-06-15T16:13:41Z">
+    </test> <!-- ChromeGoogleSearchTests -->
+    <test name="FirefoxGoogleSearchTests" duration-ms="19115" started-at="2017-06-16T18:15:36Z" finished-at="2017-06-16T18:15:55Z">
       <class name="com.web.test.FirefoxGoogleSearchTests">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.web.test.FirefoxGoogleSearchTests@6e06451e]" name="beforeClass" is-config="true" duration-ms="5608" started-at="2017-06-15T19:13:31Z" finished-at="2017-06-15T19:13:37Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.web.test.FirefoxGoogleSearchTests@6e06451e]" name="beforeClass" is-config="true" duration-ms="5754" started-at="2017-06-16T21:15:36Z" finished-at="2017-06-16T21:15:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="testTextFromFirstSearchResult()[pri:1, instance:com.web.test.FirefoxGoogleSearchTests@6e06451e]" name="testTextFromFirstSearchResult" duration-ms="3271" started-at="2017-06-15T19:13:37Z" finished-at="2017-06-15T19:13:40Z">
+        <test-method status="PASS" signature="testTextFromFirstSearchResult()[pri:1, instance:com.web.test.FirefoxGoogleSearchTests@6e06451e]" name="testTextFromFirstSearchResult" duration-ms="5719" started-at="2017-06-16T21:15:42Z" finished-at="2017-06-16T21:15:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTextFromFirstSearchResult -->
-        <test-method status="FAIL" signature="test123()[pri:2, instance:com.web.test.FirefoxGoogleSearchTests@6e06451e]" name="test123" duration-ms="210" started-at="2017-06-15T19:13:40Z" finished-at="2017-06-15T19:13:41Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="FAIL" signature="test123()[pri:2, instance:com.web.test.FirefoxGoogleSearchTests@6e06451e]" name="test123" duration-ms="1376" started-at="2017-06-16T21:15:48Z" finished-at="2017-06-16T21:15:49Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[failed! expected [qqq] but found [qqq 139.13 -0.62 -0.44% : powershares qqq trust, ser 1 - yahoo ...]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770)
-	at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:96)
-	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:71)
-	at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:45)
-	at com.main.objects.AbstractMainPage.waitForElement(AbstractMainPage.java:17)
-	at com.main.objects.AbstractMainPage.waitForElementToBeVisible(AbstractMainPage.java:21)
-	at com.main.objects.AbstractMainPage.waitAndGetText(AbstractMainPage.java:29)
-	at com.google.pages.GoogleResultPage.getTextFromFirstSearchResult(GoogleResultPage.java:23)
+              <![CDATA[java.lang.AssertionError: failed! expected [qqq] but found [qqq 139.13 -0.62 -0.44% : powershares qqq trust, ser 1 - yahoo ...]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
 	at com.web.test.FirefoxGoogleSearchTests.test123(FirefoxGoogleSearchTests.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -206,16 +266,28 @@
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test123 -->
-        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String)[pri:3, instance:com.web.test.FirefoxGoogleSearchTests@6e06451e]" name="test" duration-ms="1" started-at="2017-06-15T19:13:41Z" data-provider="dataForTests" finished-at="2017-06-15T19:13:41Z">
+        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String)[pri:3, instance:com.web.test.FirefoxGoogleSearchTests@6e06451e]" name="test" duration-ms="1535" started-at="2017-06-16T21:15:49Z" data-provider="dataForTests" finished-at="2017-06-16T21:15:51Z">
           <params>
             <param index="0">
               <value>
@@ -228,14 +300,18 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[failed! expected [qaz] but found [qaz - youtube]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.clear(Unknown Source)
-	at com.google.pages.GoogleResultPage.searchSomeText(GoogleResultPage.java:16)
-	at com.web.test.FirefoxGoogleSearchTests.test(FirefoxGoogleSearchTests.java:40)
+              <![CDATA[java.lang.AssertionError: failed! expected [qaz] but found [qaz - youtube]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at com.web.test.FirefoxGoogleSearchTests.test(FirefoxGoogleSearchTests.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -246,16 +322,28 @@
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String)[pri:3, instance:com.web.test.FirefoxGoogleSearchTests@6e06451e]" name="test" duration-ms="1" started-at="2017-06-15T19:13:41Z" data-provider="dataForTests" finished-at="2017-06-15T19:13:41Z">
+        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String)[pri:3, instance:com.web.test.FirefoxGoogleSearchTests@6e06451e]" name="test" duration-ms="1997" started-at="2017-06-16T21:15:51Z" data-provider="dataForTests" finished-at="2017-06-16T21:15:53Z">
           <params>
             <param index="0">
               <value>
@@ -268,14 +356,18 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[failed! expected [wsx] but found [wsx d.i.f.h entrance music the envy - youtube]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.clear(Unknown Source)
-	at com.google.pages.GoogleResultPage.searchSomeText(GoogleResultPage.java:16)
-	at com.web.test.FirefoxGoogleSearchTests.test(FirefoxGoogleSearchTests.java:40)
+              <![CDATA[java.lang.AssertionError: failed! expected [wsx] but found [wsx d.i.f.h entrance music the envy - youtube]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at com.web.test.FirefoxGoogleSearchTests.test(FirefoxGoogleSearchTests.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -286,16 +378,28 @@
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String)[pri:3, instance:com.web.test.FirefoxGoogleSearchTests@6e06451e]" name="test" duration-ms="1" started-at="2017-06-15T19:13:41Z" data-provider="dataForTests" finished-at="2017-06-15T19:13:41Z">
+        <test-method status="FAIL" signature="test(java.lang.String, java.lang.String)[pri:3, instance:com.web.test.FirefoxGoogleSearchTests@6e06451e]" name="test" duration-ms="1341" started-at="2017-06-16T21:15:53Z" data-provider="dataForTests" finished-at="2017-06-16T21:15:54Z">
           <params>
             <param index="0">
               <value>
@@ -308,14 +412,18 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[failed! expected [edc] but found [everyday carry - what are your edc essentials?]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.clear(Unknown Source)
-	at com.google.pages.GoogleResultPage.searchSomeText(GoogleResultPage.java:16)
-	at com.web.test.FirefoxGoogleSearchTests.test(FirefoxGoogleSearchTests.java:40)
+              <![CDATA[java.lang.AssertionError: failed! expected [edc] but found [everyday carry - what are your edc essentials?]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at com.web.test.FirefoxGoogleSearchTests.test(FirefoxGoogleSearchTests.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -326,20 +434,32 @@
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.web.test.FirefoxGoogleSearchTests@6e06451e]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-06-15T19:13:41Z" finished-at="2017-06-15T19:13:41Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.web.test.FirefoxGoogleSearchTests@6e06451e]" name="afterClass" is-config="true" duration-ms="1385" started-at="2017-06-16T21:15:54Z" finished-at="2017-06-16T21:15:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.web.test.FirefoxGoogleSearchTests -->
-    </test> <!-- Firefox -->
+    </test> <!-- FirefoxGoogleSearchTests -->
   </suite> <!-- GoogleSearchTests -->
 </testng-results>

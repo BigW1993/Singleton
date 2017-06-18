@@ -8,6 +8,7 @@
           <include name="afterClass"/>
           <include name="test123"/>
           <include name="beforeClass"/>
+          <include name="testTextFromFirstSearchResult"/>
           <include name="test" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- com.web.test.ChromeGoogleSearchTests -->

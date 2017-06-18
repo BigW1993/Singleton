@@ -11,51 +11,51 @@ import io.github.bonigarcia.wdm.FirefoxDriverManager;
 
 public class BrowserWebDriver {
 
-	private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
+	private static WebDriver driver;
 
 	private BrowserWebDriver() {
 
 	}
 
 	public static WebDriver getInstance() {
-		return driver.get();
+		return driver;
 	}
 
 	public static WebDriver startChrome() {
-		if (driver.get() == null) {
+		if (driver == null) {
 			ChromeDriverManager.getInstance().setup();
-			driver.set(new ChromeDriver());
-			driver.get().manage().window().maximize();
+			driver = new ChromeDriver();
+			driver.manage().window().maximize();
 		}
-		return driver.get();
+		return driver;
 	}
 
 	public static WebDriver startFirefox() {
-		if (driver.get() == null) {
+		if (driver == null) {
 			FirefoxDriverManager.getInstance().setup();
-			driver.set(new FirefoxDriver());
-			driver.get().manage().window().maximize();
+			driver = new FirefoxDriver();
+			driver.manage().window().maximize();
 		}
-		return driver.get();
+		return driver;
 	}
 
 	public static void setUrl(String url) {
-		driver.get().get(url);
+		driver.get(url);
 	}
 
 	public static void changeCurrentTab(int tab) {
-		ArrayList<String> tabs = new ArrayList<String>(driver.get().getWindowHandles());
-		driver.get().switchTo().window(tabs.get(tab));
+		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs.get(tab));
 	}
 
 	public static void closeCurrentTab() {
-		driver.get().close();
+		driver.close();
 	}
 
 	public static void closeBrowser() {
-		if (driver.get() != null) {
-			driver.get().quit();
-			driver.remove();
+		if (driver != null) {
+			driver.quit();
+			driver = null;
 		}
 
 	}
